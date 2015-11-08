@@ -50,7 +50,7 @@ outputStr = paste(as.character(s1[4]), as.character(s1[3]), sep = ' and ')
 
 hist(totalDailySteps$steps, 
      main='Histogram of Total Daily Steps',
-     sub='NA entries not include',
+     sub='NA entries not included',
      xlab='Steps',
      ylab='Frequency')
 ```
