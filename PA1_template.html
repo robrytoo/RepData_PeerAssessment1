@@ -203,13 +203,14 @@ hr {
 <body>
 <p>#Introduction</p>
 
-<p>This is the first assignment in the class Reproducible Research offered through Coursea in November 2015. The object of the exercise it to practice literate programming using markdown language, knitr, and R to produce an HTML output.  This is done by answering a series of questions of a data set obtained with a personal activity monitoring device. This data set contains the number of steps taken by an individual during 5 minute intervals over the months of October and November of 2012.  The data set is obtained from <strong><a href="https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip">https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip</a></strong> and was downloaded on 11/4/2015.  Other information regarding the source is not available.</p>
+<p>This is the first assignment in the class Reproducible Research offered through Coursea in November 2015. The object of the exercise it to practice literate programming using markdown language, knitr, and R to produce an HTML output.  This is done by answering a series of questions of a data set obtained with a personal activity monitoring device. This data set contains the number of steps taken by an individual during 5 minute intervals over the months of October and November of 2012.  The data set in the file activity.zip was included in the origin fork from GitHub.  (The original file is reported to be available here <a href="https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip">activity.zip</a>.  Other information regarding the source is not available.)</p>
 
 <h2>Loading and preprocessing the data</h2>
 
 <pre><code class="r">filename = &quot;activity.csv&quot;
-if (!file.exists(filename))
+if (!file.exists(filename)) 
   unzip(&quot;activity.zip&quot;)
+
 data = read.csv(filename)
 </code></pre>
 
