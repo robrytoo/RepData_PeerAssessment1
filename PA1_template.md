@@ -1,4 +1,9 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
 
 ## Loading and preprocessing the data
@@ -75,7 +80,7 @@ hist(totalDailySteps$steps,
      ylab='Frequency')
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
 
 Mean and Median of the distribution are 10770 and 10760 respectively.
 
@@ -121,7 +126,7 @@ axis(1, at=c(0, 6, 12, 18, 24), labels=c("Midnight", "6 AM", "Noon", "6 PM", "Mi
 axis(2, at=c(0,50,100,150,200) )
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 Maximun average number of steps occurs in interval from 8:35 to 8:40 (24 hour time format.)
 
@@ -170,7 +175,7 @@ hist(totalDailyStepsAllDays$steps,
      ylab='Frequency')
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
 
 Mean and Median of the distribution are 10770 and 10770 respectively. Given that NA values were imputed from the means of the intervals there is no change from the mean calculated in Part 1.  The median is shifted towards the mean (from 10760 to 10770, in this case they now coincide.) The histogram is increased centrally by eight since the central bar contains the mean.
 
@@ -216,7 +221,7 @@ axis(1, at=c(0, 6, 12, 18, 24), labels=c("Midnight", "6 AM", "Noon", "6 PM", "Mi
 axis(2, at=c(0,50,100,150,200) )
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
 
 
 
@@ -238,4 +243,4 @@ ggplot(data=dd, aes(x=t, y = steps)) +
          x="Time of Day", y="Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png) 
+![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png) 
